@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% from "macros/pagination.html" import render_pagination %}
+
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block main %}
+  {% if this.pagination.items.count() == 0  %}
+  <h1>/{{ this.title }}/Index</h1>
+    <article>
+      <p>
+        <em>Ups! Nothing is written yet.</em><br><br>
+        I plan to add RSS feed and a mailing list for updates, make sure to come by again. <br>
+        You can also contact me, info is on <a href="{{ '/'|url }}">/Home/</a>.
+      </p>
+    <p></p>
+  </article>
+
+  {% else %}
+
+    {% for child in this.pagination.items %}
+      {{ render_blog_post(child, from_index=true) }}
+    {% endfor %}
+    {{ render_pagination(this.pagination) }}
+  {% endif %}
+
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="{{ '/static/css/normalize.css'|asseturl }}">
+        <link rel="stylesheet" type="text/css" href="{{ '/static/css/main.css'|asseturl }}">
+        
+        <title>{% block page_title %}Welcome{% endblock %} - Saša Savić's piece of the internet</title>
+        <meta name="description" content="{% block meta_desc %}{% endblock %}">
+
+        <!-- icons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ '/static/root/apple-icon-57x57.png'|asseturl }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ '/static/root/apple-icon-60x60.png'|asseturl }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ '/static/root/apple-icon-72x72.png'|asseturl }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ '/static/root/apple-icon-76x76.png'|asseturl }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ '/static/root/apple-icon-114x114.png'|asseturl }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ '/static/root/apple-icon-120x120.png'|asseturl }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ '/static/root/apple-icon-144x144.png'|asseturl }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ '/static/root/apple-icon-152x152.png'|asseturl }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ '/static/root/apple-icon-180x180.png'|asseturl }}">
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ '/static/root/android-icon-192x192.png'|asseturl }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ '/static/root/favicon-32x32.png'|asseturl }}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ '/static/root/favicon-96x96.png'|asseturl }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ '/static/root/favicon-16x16.png'|asseturl }}">
+        <link rel="manifest" href="{{ '/static/root/manifest.json'|url }}">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{{ '/static/root/ms-icon-144x144.png'|asseturl }}">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header>
+            <p>
+                <a href="{{ '/'|url }}"><img src="{{ '/static/img/logo.svg'|url }}"></a>
+                <span><a href="{{ '/'|url }}">Saša Savić // saleone</a></span>
+            </p>
+            <nav>
+                <ul>
+                    {% for href, title in [
+                        ('/blog', 'Blog'), 
+                        ('/projects', 'Projects'), 
+                        ('/about', 'About')
+                    ] %}
+                    <li><a href='{{ href|url }}'>/{{ title }}/</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+    </body>
+</html>

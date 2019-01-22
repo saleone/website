@@ -1,8 +1,8 @@
-_model: basic 
+_model: basic
 ---
 title: Welcome
 ---
-meta_desc: Find most recent updates and blog post from Saša Savić. 
+meta_desc: Find most recent updates and blog post from Saša Savić.
 ---
 body:
 
@@ -13,8 +13,8 @@ body:
         You've landed on my home page so I need to tell more about myself. <br>
         First of all, I am a 25 year old human from Banja Luka.
         You can find Banja Luka <a target=_blank href='https://www.openstreetmap.org/node/248407024#map=19/44.77198/17.18989'>here</a>. <br>
-        <a href='http://mf.unibl.org/'>Faculty of Mechanical Engineering</a> in Banja Luka should give me my BSc diploma soon and I should become a mechanical (mechatronics) engineer then.<br>
-        But, currently, I work full-time as a software developer at <a href='https://comtrade.com/'>ComTrade</a> on a project for <a href='https://www.stem.com/athena/'>Stem</a>.<br>
+        <a target='_blank' href='http://mf.unibl.org/'>Faculty of Mechanical Engineering</a> in Banja Luka should give me my BSc diploma soon and I should become a mechanical (mechatronics) engineer then.<br>
+        But, currently, I work full-time as a software developer at <a target='_blank' href='https://comtrade.com/'>ComTrade</a> on a project for <a target='_blank' href='https://www.stem.com/athena/'>Stem</a>.<br>
         There is a more serious content on <a href='/about'>About/</a> page, it's also in &#8663; (arrow is off on low resolution) navigation bar, feel free to check it.
     </p>
     <p>

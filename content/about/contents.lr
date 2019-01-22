@@ -1,8 +1,8 @@
 _model:basic
 ---
-title: About me
+title: About
 ---
-meta_desc: Read about Saša's professional experience. 
+meta_desc: Read about Saša's professional experience.
 ---
 body:
 
@@ -17,7 +17,7 @@ body:
         <li>Born in Teslić, Bosnia and Herzegovina</li>
         <li>Residing in Banja Luka, Bosnia and Herzegovina</li>
     </ul>
-    
+
     <h3>Languages</h3>
     <ul>
         <li>Serbian (and similar languages/dialects from the Balkans)</li>
@@ -31,7 +31,7 @@ body:
         <li>Start giving more than consuming (develop tools and libraries)</li>
         <li>Focus more on low-level projects (systems engineering with C and C++) </li>
     </ul>
-    
+
     <h3>Technical Skills</h3>
     <ul>
         <li>
@@ -40,15 +40,15 @@ body:
                 <li>
                     Python (
                     <a target='_blank' href='http://flask.pocoo.org/'>Flask</a>,
-                    <a target='_blank' href='https://www.djangoproject.com/'>Django</a>, 
-                    <a target='_blank' href='https://www.django-rest-framework.org/'>Django with Rest Framework</a>, 
+                    <a target='_blank' href='https://www.djangoproject.com/'>Django</a>,
+                    <a target='_blank' href='https://www.django-rest-framework.org/'>Django with Rest Framework</a>,
                     <a target='_blank' href='https://falconframework.org/'>Falcon</a>
                     )
                 </li>
                 <li>
-                    Javascript (Vanilla, 
-                    <a target='_blank' href='https://nodejs.org/'>node.js</a>, 
-                    <a target='_blank' href='https://vuejs.org'>Vue.js</a>, 
+                    Javascript (Vanilla,
+                    <a target='_blank' href='https://nodejs.org/'>node.js</a>,
+                    <a target='_blank' href='https://vuejs.org'>Vue.js</a>,
                     <a target='_blank' href='https://expressjs.com/'>Express</a>
                     )
                 </li>
@@ -76,7 +76,7 @@ body:
             </ul>
         </li>
     </ul>
-    
+
     <h3>Soft Skills</h3>
     <ul>
         <li>Friendly and approachable</li>
@@ -84,7 +84,7 @@ body:
         <li>Leader with proven leadership roles</li>
         <li>Trained in Agile mentality and approach towards development</li>
     </ul>
-    
+
     <hr>
     <h3>Professional Experience</h3>
     <ul>
@@ -155,7 +155,7 @@ body:
                 <li>Implemented blog integrated with existing community</li>
                 <li>Implemented forum integrated with community and already existing tools</li>
             </ul>
-            
+
 
             <h5>Achievements</h5>
             <ul>
@@ -165,4 +165,4 @@ body:
         </li>
     </ul>
     <hr>
-</article> 
+</article>

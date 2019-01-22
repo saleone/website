@@ -6,9 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="{{ '/static/css/normalize.css'|asseturl }}">
         <link rel="stylesheet" type="text/css" href="{{ '/static/css/main.css'|asseturl }}">
-        
-        <title>{% block page_title %}Welcome{% endblock %} - Saša Savić's piece of the internet</title>
-        <meta name="description" content="{% block meta_desc %}{% endblock %}">
+
+        <title>{{ this.title }} - Saša Savić</title>
+        <meta name="description" content="{{ this.meta_desc }}">
 
         <!-- icons -->
         <link rel="apple-touch-icon" sizes="57x57" href="{{ '/static/root/apple-icon-57x57.png'|asseturl }}">
@@ -38,8 +38,8 @@
             <nav>
                 <ul>
                     {% for href, title in [
-                        ('/blog', 'Blog'), 
-                        ('/projects', 'Projects'), 
+                        ('/blog', 'Blog'),
+                        ('/projects', 'Projects'),
                         ('/about', 'About')
                     ] %}
                     <li><a href='{{ href|url }}'>/{{ title }}/</a></li>
@@ -48,7 +48,7 @@
             </nav>
         </header>
         <main>
-            {% block main %}{% endblock %}
+        {% block main %}{{ this.body }}{% endblock %}
         </main>
     </body>
 </html>

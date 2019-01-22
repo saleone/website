@@ -11,9 +11,9 @@ body:
     <h2>Saša Savić</h2>
     Software Engineer with more than 5 years of experience in software development for automotive, financial, retail and consumer sectors.
 
-    <h3>Personal information</h3>
+    <h3>Basic information</h3>
     <ul>
-        <li>24 year old</li>
+        <li>25 year old</li>
         <li>Born in Teslić, Bosnia and Herzegovina</li>
         <li>Residing in Banja Luka, Bosnia and Herzegovina</li>
     </ul>
@@ -127,7 +127,7 @@ body:
 
             <h5>Achievements</h5>
             <ul>
-                <li>Developed software used by globally known companies (Audi, VM, BMW, SAIC, etc.)</li>
+                <li>Developed software used by globally known companies (Audi, VW, BMW, SAIC, etc.)</li>
                 <li>Assigned the role of a team leader in less than a year</li>
                 <li>Became proficient in TDD (Test Driven Development)</li>
                 <li>Presented our successful SCRUM based work process for potential customers (one of which BMW)</li>

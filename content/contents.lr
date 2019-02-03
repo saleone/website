@@ -1,5 +1,7 @@
 _model: basic
 ---
+_template: homepage.html
+---
 title: Welcome
 ---
 meta_desc: Find most recent updates and blog post from Saša Savić.
@@ -36,16 +38,4 @@ body:
             <li>Book tracker <a target='_blank' href='https://goodreads.com/saleone'>goodreads.com/saleone</a> to saleone++</li>
         </ul>
     </p>
-</article>
-<article>
-    <header><h1>Blog overview</h1></header>
-    <p>You will be able to find my latest and my pinned blog posts here, but I'll have to write them first.</p>
-</article>
-<article>
-    <header><h1>Projects</h1></header>
-    <p>
-        I've done quite a few in the past, both hardware and software related.
-        This section will track the ongoing projects.
-        You can see some work I've done on <a target='_blank' href='https://github.com/saleone'>Github</a> and all my previous professional experience is listed on <a href='/about'>/About/</a> page.
-</p>
 </article>

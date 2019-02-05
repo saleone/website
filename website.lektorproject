@@ -6,4 +6,4 @@ url_style = absolute
 name = Production
 enabled = yes
 default = yes
-target = rsync://root@saleone.tk/var/www/html
+target = rsync://root@sasa-savic.com/var/www/html

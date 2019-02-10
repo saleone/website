@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="{{ '/static/css/normalize.css'|asseturl }}">
         <link rel="stylesheet" type="text/css" href="{{ '/static/css/main.css'|asseturl }}">
 
-        <title>{{ this.title }} - Saša Savić</title>
+        <title>{% block page_title %}{{ this.title }}{% endblock %} - Saša Savić</title>
         <meta name="description" content="{{ this.meta_desc }}">
 
         <!-- icons -->

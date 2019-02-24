@@ -14,16 +14,16 @@ body:
     <p>
         You've landed on my home page so I need to tell more about myself. <br>
         First of all, I am a 25 year old human from Banja Luka.
-        You can find Banja Luka <a target=_blank href='https://www.openstreetmap.org/node/248407024#map=19/44.77198/17.18989'>here</a>. <br>
-        <a target='_blank' href='http://mf.unibl.org/'>Faculty of Mechanical Engineering</a> in Banja Luka should give me my BSc diploma soon and I should become a mechanical (mechatronics) engineer then.<br>
-        But, currently, I work full-time as a software developer at <a target='_blank' href='https://comtrade.com/'>ComTrade</a> on a project for <a target='_blank' href='https://www.stem.com/athena/'>Stem</a>.<br>
+        You can <a target='_blank' rel='noopener' href='https://www.openstreetmap.org/node/248407024#map=19/44.77198/17.18989'>find Banja Luka here</a>.<br>
+        <a target='_blank' rel='noopener' href='http://mf.unibl.org/'>Faculty of Mechanical Engineering</a> in Banja Luka should give me my BSc diploma soon and I should become a mechanical (mechatronics) engineer then.<br>
+        But, currently, I work full-time as a software developer at <a target='_blank' rel='noopener' href='https://comtrade.com/'>ComTrade</a> on a project for <a target='_blank' rel='noopener' href='https://www.stem.com/athena/'>Stem</a>.<br>
         There is a more serious content on <a href='/about'>About/</a> page, it's also in &#8663; (arrow is off on low resolution) navigation bar, feel free to check it.
     </p>
     <p>
         I don't really use social networks and you can only contact me on the following:
         <ul>
             <li>Personal email at <a href='mailto:sasa@sasa-savic.com'>sasa@sasa-savic.com</a></li>
-            <li>LinkedIn at <a target='_blank' href='https://www.linkedin.com/in/onesale/'>in/onesale</a> (if you can, does not mean you should)</li>
+            <li>LinkedIn at <a target='_blank' rel='noopener' href='https://www.linkedin.com/in/onesale/'>in/onesale</a> (if you can, does not mean you should)</li>
             Use the following for relevant discussions
             <li>ComTrade email at <a href='mailto:sasa.savic@comtrade.com'>sasa.savic@comtrade.com</a></li>
             <li>Stem email at <a href='mailto:sasa.savic@stem.com'>sasa.savic@stem.com</a></li>
@@ -32,10 +32,10 @@ body:
     <p>
         Check these:
         <ul>
-            <li>Github as <a target='_blank' href='https://github.com/saleone'>saleone</a> (same for <a target='_blank' href='https://gitlab.com/saleone'>GitLab</a>)</li>
-            <li>sr.ht as <a target='_blank' href='https://git.sr.ht/~saleone'>~saleone</a> (I'm moving most of my repos here, it will be great)</li>
-            <li>Steam as, you've guessed it, <a target='_blank' href='https://steamcommunity.com/id/saleone'>saleone</a> (fun fact: recently I spend more time making games than playing them)</li>
-            <li>Book tracker <a target='_blank' href='https://goodreads.com/saleone'>goodreads.com/saleone</a> to saleone++</li>
+            <li>Github as <a target='_blank' rel='noopener' href='https://github.com/saleone'>saleone</a> (same for <a target='_blank' rel='noopener' href='https://gitlab.com/saleone'>GitLab</a>)</li>
+            <li>sr.ht as <a target='_blank' rel='noopener' href='https://git.sr.ht/~saleone'>~saleone</a> (I'm moving most of my repos here, it will be great)</li>
+            <li>Steam as, you've guessed it, <a target='_blank' rel='noopener' href='https://steamcommunity.com/id/saleone'>saleone</a> (fun fact: recently I spend more time making games than playing them)</li>
+            <li>Book tracker <a target='_blank' rel='noopener' href='https://goodreads.com/saleone'>goodreads.com/saleone</a> to saleone++</li>
         </ul>
     </p>
 </article>

@@ -26,7 +26,7 @@ body:
 
     <h3>Goals</h3>
     <ul>
-        <li>Increase <a target='_blank' href='https://en.wikipedia.org/wiki/Free_and_open-source_software'>FOSS</a> contributions</li>
+        <li>Increase <a target='_blank' rel='noopener' href='https://en.wikipedia.org/wiki/Free_and_open-source_software'>FOSS</a> contributions</li>
         <li>Find new ways to train others and share knowledge</li>
         <li>Start giving more than consuming (develop tools and libraries)</li>
         <li>Focus more on low-level projects (systems engineering with C and C++) </li>
@@ -39,17 +39,17 @@ body:
             <ul>
                 <li>
                     Python (
-                    <a target='_blank' href='http://flask.pocoo.org/'>Flask</a>,
-                    <a target='_blank' href='https://www.djangoproject.com/'>Django</a>,
-                    <a target='_blank' href='https://www.django-rest-framework.org/'>Django with Rest Framework</a>,
-                    <a target='_blank' href='https://falconframework.org/'>Falcon</a>
+                    <a target='_blank' rel='noopener' href='http://flask.pocoo.org/'>Flask</a>,
+                    <a target='_blank' rel='noopener' href='https://www.djangoproject.com/'>Django</a>,
+                    <a target='_blank' rel='noopener' href='https://www.django-rest-framework.org/'>Django with Rest Framework</a>,
+                    <a target='_blank' rel='noopener' href='https://falconframework.org/'>Falcon</a>
                     )
                 </li>
                 <li>
                     Javascript (Vanilla,
-                    <a target='_blank' href='https://nodejs.org/'>node.js</a>,
-                    <a target='_blank' href='https://vuejs.org'>Vue.js</a>,
-                    <a target='_blank' href='https://expressjs.com/'>Express</a>
+                    <a target='_blank' rel='noopener' href='https://nodejs.org/'>node.js</a>,
+                    <a target='_blank' rel='noopener' href='https://vuejs.org'>Vue.js</a>,
+                    <a target='_blank' rel='noopener' href='https://expressjs.com/'>Express</a>
                     )
                 </li>
                 <li>
@@ -89,8 +89,8 @@ body:
     <h3>Professional Experience</h3>
     <ul>
         <li>
-            <h4>Currently employed as Lead Software Engineer at <a target='_blank' href='https://comtrade.com'>ComTrade</a></h4>
-            Microservices development for <a target='_blank' href='https://stem.com/athena'>Stem's Athena</a>.
+            <h4>Currently employed as Lead Software Engineer at <a target='_blank' rel='noopener' href='https://comtrade.com'>ComTrade</a></h4>
+            Microservices development for <a target='_blank' rel='noopener' href='https://stem.com/athena'>Stem's Athena</a>.
             Workflow heavily focused on containers (Docker) and Kubernetes deployments. Usage of standards and communication protocols such as 2030.5, DNP3 and OpenADR.
 
             <h5>Goals</h5>
@@ -100,8 +100,8 @@ body:
             </ul>
         </li>
         <li>
-            <h4>Software Engineer (Lead Developer) at <a target='_blank' href='https://flashboys.io/'>Flashboys B.V.</a></h4>
-            Full featured crypto banking solution development (<a target='_blank' href='https://wizzle.io'>Wizzle.io</a>), as well as consulting projects for external companies.
+            <h4>Software Engineer (Lead Developer) at <a target='_blank' rel='noopener' href='https://flashboys.io/'>Flashboys B.V.</a></h4>
+            Full featured crypto banking solution development (<a target='_blank' rel='noopener' href='https://wizzle.io'>Wizzle.io</a>), as well as consulting projects for external companies.
 
             <ul>
                 <li>Implemented ATM application with C# using UWP (with intergration with bill dispensers, cameras, barcode scanners, etc.)</li>
@@ -117,8 +117,8 @@ body:
             </ul>
         </li>
         <li>
-            <h4>Software Engineer at <a target='_blank' href='https://rt-rk.com'>RT-RK</a></h4>
-            Integration of internal tools into a product for <a target='_blank' href='https://www.tttech-auto.com/products/automated-driving/motionwise/'>TTTech's MotionWise</a>.
+            <h4>Software Engineer at <a target='_blank' rel='noopener' href='https://rt-rk.com'>RT-RK</a></h4>
+            Integration of internal tools into a product for <a target='_blank' rel='noopener' href='https://www.tttech-auto.com/products/automated-driving/motionwise/'>TTTech's MotionWise</a>.
             <ul>
                 <li>Integrated multiple automotive integrations tools for code generation, compilation, testing, simulation, and flashing binaries used in modern cars</li>
                 <li>Developed maintainable and clean CLI APIs for usage by external applications</li>
@@ -134,7 +134,7 @@ body:
             </ul>
         </li>
         <li>
-            <h4>Full-stack developer at <a target='_blank' href='https://multiply.cloud'>Multiply Software Ltd</a> and <a target='_blank' href='https://stratalis.net/en/'>Stratalis Ltd</a></h4>
+            <h4>Full-stack developer at <a target='_blank' rel='noopener' href='https://multiply.cloud'>Multiply Software Ltd</a> and <a target='_blank' rel='noopener' href='https://stratalis.net/en/'>Stratalis Ltd</a></h4>
             Intelligent online marketplace repricing service development used to maximize profits while keeping sensible margins.
             <ul>
                 <li>Implemented interactive dashboards for online selers</li>
@@ -149,7 +149,7 @@ body:
             </ul>
         </li>
         <li>
-            <h4>Full-stack developer at <a target='_blank' href='http://wapcreate.com'>WapCreate</a> (service discontinued)</h4>
+            <h4>Full-stack developer at <a target='_blank' rel='noopener' href='http://wapcreate.com'>WapCreate</a> (service discontinued)</h4>
             Website builder and hosting focused on phones.
             <ul>
                 <li>Implemented blog integrated with existing community</li>

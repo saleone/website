@@ -1,0 +1,52 @@
+title: Ricing my desires: Introduction
+---
+body:
+
+# Ricing my desires: Introduction
+
+This post is the first post in a series of post about creating my fully personalized [desktop environment](https://wiki.archlinux.org/index.php/Desktop_environment).
+
+Linux distributions are a bit different that your usual Window and Mac.
+In contrast to your usual Windows and MacOS, Linux distributions are a bit different.
+Users have a freedom to tinker with every application that is installed.
+That means you can change the way you log in to you system, how you open applications, the way those application are presented to you and in most application their visuals.
+In general, this is a good thing, it has produced thousands of [Linux distributions](https://en.wikipedia.org/wiki/Linux_distribution) ([?](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)) with or without GNU software.
+More than 90% percent of people will probably find something that works for them.
+
+The "bad" thing is that you can be in the other 10% of the people, just as I am.
+You may be a distro hopper, constantly changing and ricing new environments, configuring your editor for days to do half a day of work ... cough ... Emacs.
+It's obvious that this can be a huge time waster.
+And as a solution I propose a final time investment.
+Waste time one more time to create your own personal setup.
+Why? Because its harder to throw away something that is "yours".
+That is only because I don't consider my changes to be anything that I can consider mine.
+If you're satisfied with your setup, ignore me, don't get tempted to start doing this.
+
+I want to keep things as minimal as possible.
+Less things means less maintenance which will hopefully give me more productive time.
+For software engineers out there, this can also force you to keep things simple, working and fast.
+There is no big IDE to support your over engineered code.
+It is all back to the basics, professional basketball players contantly practice their jump shots.
+
+Now, to the meat of the post, we're going to go though:
+* Deciding and setting up minimal distro installation
+* Setting up basic desktop environment
+* Patching and customizing essential applications
+* Setting up notification system, cron jobs and some useful scripts
+
+To be a bit more precise.
+We're going to set up minimal installation of Fedora with full disk encryption, but I'll make sure to add links and tips for Arch installation.
+More on the reasons about this choice in the follow-up post.
+For the core applications we'll use whats provided by the suckless community.
+The sole reasons is the simplicity they give.
+But, since they have silly goals, we will have to patch and recompile them too add more functionality.
+We will start using dwm, dmenu and st, this should be enough to enable you to work.
+There is a few more interesting tools, which we may try if the need arises.
+It is also nice to have a status bar with system information, critical battery notifications, automatic updates.
+Those will be the part of unknown number of posts at the end of the series.
+
+[Some time in the future, when we finish this series, you'll have few screenshots here, to know what to expect.]
+---
+meta_desc: Introduction post in the series about setting up custom tiling window manager based desktop environement using Fedora with full disk encryption and suckless dwm, st and dmenu tools.
+---
+pub_date: 2019-02-17

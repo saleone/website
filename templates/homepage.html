@@ -9,16 +9,7 @@
     {% set latest_post = site.query('/blog').first() %}
     <a href="{{ url_to(latest_post) }}">{{ latest_post.title }}</a>.
     <p>
-    There is just {{ site.query('/blog').all()|length }} article for now, but it is <code>ZeroDivisionException</code> times more than last year.
-    </p>
-</article>
-
-<article>
-    <header><h1>Projects</h1></header>
-    <p>
-        This section will track the ongoing projects, for which I haven't written any code (markup?) yet.
-        Anyway, I've done quite a few in the past, both hardware and software related.
-        You can see some work I've done on <a target='_blank' rel='noopener' href='https://github.com/saleone'>Github</a> and all my previous professional experience is listed on <a href='/about'>/About/</a> page.
+    There is just {{ site.query('/blog').all()|length }} articles for now, but it is <code>ZeroDivisionException</code> times more than last year.
     </p>
 </article>
 {% endblock %}

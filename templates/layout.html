@@ -32,13 +32,13 @@
         <header>
             <p>
                 <a href="{{ '/'|url }}"><img src="{{ '/static/img/logo.svg'|url }}" alt="Website logo as keyboard S button"></a>
-                <span><a href="{{ '/'|url }}">Saša Savić // saleone</a></span>
+                <span>Saša Savić // saleone</span>
             </p>
             <nav>
                 <ul>
                     {% for href, title in [
+                        ('/', 'Home'),
                         ('/blog', 'Blog'),
-                        ('/projects', 'Projects'),
                         ('/about', 'About')
                     ] %}
                     <li><a href='{{ href|url }}'>/{{ title }}/</a></li>

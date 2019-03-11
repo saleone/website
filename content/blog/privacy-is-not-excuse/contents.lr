@@ -1,0 +1,58 @@
+title: Privacy shouldn't be an excuse for selfishness
+---
+body:
+
+In the recent time, I was really focused on privacy. The current state of the
+world in regard of user privacy is sad and frightening. Data is being
+massively collected and poor handling is causing data leaks every
+single day. And yet, I'm writing a post that advocates that you can ignore
+all of this (to a certain degree).
+
+Before we go any further, it's important that you know that I really value
+privacy. My blog is completely static, you won't find any dynamic content both
+on server ([there is none](https://www.getlektor.com/)) and client side. I don't
+even have access logs. All this so you can stay completely private.
+Even though I lose track of my audience and I can't really see if I have
+an audience the sacrifice is worth it. We'll find a different, voluntary,
+way to track visits and communicate (mailing list?).
+
+So, I was deep into avoiding a personal privacy horror story by hosting my own
+servers for website, email and file sync. I had to constantly check everything,
+pay for the services and find new ways to de-google-ify. All this to avoid
+"them" knowing that I want to do something. Just LineageOS
+away from deleting my Google account, I had a revelation while watching an
+interview with Bill Gates. He set up a foundation to help people around the
+world, while I was there in my room, spending my resources just on myself.
+
+Isn't a better alternative to use your time to contribute to a tool
+that helps to improve the privacy for all. Isn't it better to donate some
+money to organizations that will improve the overall picture? It may have
+lesser impact on me or you now, but WE get a better tomorrow. Not everyone can
+afford or knows how to self host everything, and they don't have
+to. You probably rely on you mechanic to fix your car or accountant to do your
+taxes. Trust (or law) must be there in order for us to feel safe and it is no
+different in the digital world. This is what we need to focus on and stop being
+... selfish.
+
+There is nothing bad with collecting data, it's the way that data is used.
+I certainly want to know that I may hit the traffic jam if I am going to
+important meeting. I want to know that I may have a stroke if I continue
+running for 20 more minutes. Also, on the other side of the story, I can
+build some self-control and skip buying every thing that pops on my screen.
+There is a way to create a system to properly handle using and sharing data,
+we just need to invest in it. Technology has always had a huge part in growing
+the human society, I don't see why it shouldn't be the case today.
+
+_When you're doing something just for yourself, think if it's possible
+to do that for __us__, be less selfish._
+
+>Website is now hosted on [Github Pages](https://pages.github.com/).
+>Since I don't have any servers now,  I found a lot more stress free time. 
+---
+meta_desc:
+
+A lot of us is wasting valuable time on their own privacy. This is an alternative view to protecting your own privacy by helping privacy in general. 
+---
+pub_date: 2019-03-10
+---
+_slug: privacy-is-not-excuse

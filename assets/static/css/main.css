@@ -17,6 +17,11 @@ body {
     margin: 0 auto;
 }
 
+body > main {
+    max-width: 100%;
+    width: 700px;
+    margin: auto;
+}
 
 body > header {
     display: flex;
@@ -77,6 +82,14 @@ a[href*="//"]:after {
     content: '\1F517';
 }
 
+/* Blocks */
+blockquote {
+    border-left: 1px solid #000;
+    padding-left: 1em;
+    margin: 1em 0;
+
+}
+
 /* Headers */
 h1, h2, h3 {
     font-style: italic;
@@ -110,15 +123,10 @@ ul#posts h2 {
         margin: 0;
     }
 
-    /* body > header > nav {
-        width: 100%;
-    } */
-
     body  > header, body > header > p{
         flex-direction: column;
         align-items: center;
         justify-items: end;
     }
-
 }
 

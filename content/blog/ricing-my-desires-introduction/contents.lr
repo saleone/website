@@ -43,7 +43,15 @@ There is a few more interesting tools, which we may try if the need arises.
 It is also nice to have a status bar with system information, critical battery notifications, automatic updates.
 Those will be the part of unknown number of posts at the end of the series.
 
-[Some time in the future, when we finish this series, you'll have few screenshots here, to know what to expect.]
+***
+
+Edited: 2019-04-23
+
+In the end, you can hope to get a setup similar to the one in the following screenshots.
+
+![Screenshot of dwm without active programs](https://camo.githubusercontent.com/2fd19faafc8f2ed79fe9841ecaa3f8bb227aff3a/68747470733a2f2f692e696d6775722e636f6d2f745063434948632e6a7067)
+![Screenshot of dwm with terminal, browser and vim](https://camo.githubusercontent.com/647d58df2986d36a8aebb57b61cc08f807802ce8/68747470733a2f2f692e696d6775722e636f6d2f6c654247564e322e706e67)
+
 ---
 meta_desc: Introduction post in the series about setting up custom tiling window manager based desktop environement using Fedora with full disk encryption and suckless dwm, st and dmenu tools.
 ---

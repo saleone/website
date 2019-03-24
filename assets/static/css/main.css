@@ -63,6 +63,19 @@ body > header > nav > ul > li {
     padding: 0 1rem;
 }
 
+article p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre {
+  overflow-x: auto;
+  background: #f8f8f8;
+}
+
 /* Links */
 a {
     color: #000000;

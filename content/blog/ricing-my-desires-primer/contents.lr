@@ -1,0 +1,152 @@
+title: Ricing my desires: Primer
+---
+meta_desc: Preparing a minimal installation of Fedora together with installation of base installation and essential suckless tools to be used to create a custom environment.
+---
+pub_date: 2019-03-24
+---
+body:
+
+If you haven't, read the [introduction](/blog/ricing-my-desires-introduction/) to the series.
+
+In this post, I'll briefly explain how to set up minimal desktop environment just enough so it's possible to do daily tasks.
+As mentioned in [previous post](/blog/ricing-my-desires-introduction/) we'll be using Fedora 29.
+
+> ### Why Fedora?
+> The only reason to use Fedora is my personal preference.
+> They are developer focused and fast to adapt (properly) new technologies.
+> Besides that you can also have a clean bloat free installation using netinstall images, which may convert a few Arch fans out there.
+
+## Prerequisites
+First of all, you should download latest netinstall disk image from [Fedora](https://getfedora.org/).
+Make sure to create something bootable from the image.
+I use a flash drive, so to create bootable flash drive you can do the following:
+```sh
+$ lsblk
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda           8:0    1 28,9G  0 disk
+└─sda1        8:1    1 28,9G  0 part
+nvme0n1     259:0    0  477G  0 disk
+├─nvme0n1p1 259:1    0  200M  0 part /boot/efi
+├─nvme0n1p2 259:2    0    1G  0 part /boot
+├─nvme0n1p3 259:3    0  450G  0 part /
+└─nvme0n1p4 259:4    0   25G  0 part [SWAP]
+$ sudo dd if=fedora.iso of=/dev/sda bs=4MB
+```
+The first command (`lsblk`) lists the block devices on you computer.
+In the output above you can see that I have two.
+My internal NVMe drive is `nvme0n1` and the flash storage `sda`.
+If you use SATA drives, you'll probably have multiple `sd[X]` devices, in that case `SIZE` column is useful for finding the flash drive.
+Second command `dd` copies the `if` (input file) to `of` (output file) in chunks of 4MB.
+
+> When using netinstall all the packages are downloaded fresh from the repos, so internet connection is mandatory.
+
+## System installation
+
+Next step **boot**!
+
+Fedora uses really easy to use [Anaconda installer](https://en.wikipedia.org/wiki/Anaconda_%28installer%29).
+After language selection, there are a few thing to set up before installation.
+**Localization** is probably set perfectly.
+If you don't have internet connection set up automatically use the network configuration section.
+When the network is set, the mirrors will be selected properly and you can select the software you want to install in **Software Selection** section.
+In this case, we just set **Minimal Install** as **Base Environment**.
+Partitioning is a bit more fun, pick whatever you want, just make sure that you encrypt your partitions.
+I just set encryption, use whole drive and select automatic standard partitioning.
+If the installer creates a separate home partition for me, I remove it and expand the root partition.
+
+You can now click `Begin Installation` and set up root and administrator accounts.
+When installation finishes, reboot and continue to the next section.
+
+## Installing essentials
+
+You should log in to tty session now.
+There is a chance some packages received an update in the last ten seconds so run:
+
+```sh
+$ sudo dnf update -y
+```
+
+Even though the computer has all the essentials now, you may not want to work 40 years in the past.
+To get something remotely modern few things are needed:
+
+* Video, audio and network (drivers)
+* Something to draw and manage windows on the screen
+* Browser
+* Terminal
+
+Text editor is already installed, run `vi`.
+Video is probably okay too with open-source drivers.
+For audio the best (subjectively) is PulseAudio, to install it run the following:
+
+```sh
+$ sudo dnf install pulseaudio pulseaudio-utils -y
+```
+
+For some wireless cards you'll probably have to dig around for proprietary drivers, *good luck*.
+In my case these are `iwl` drivers from Intel.
+
+Finally, we can start working on suckless tools.
+Window manager controls the windows and suckless have [dwm](https://dwm.suckless.org/) for that.
+The best way to download suckless tools is from their git repos, which are cloned by using `git` command line tool:
+```sh
+$ sudo dnf install git -y
+```
+
+We can clone all we need from suckless now, this will include terminal ([st](https://st.suckless.org/)) and launcher ([dmenu](https://tools.suckless.org/dmenu/)) together with dwm.
+```sh
+$ mkdir -p devel/src # keep it organized
+$ cd devel/src
+$ git clone https://git.suckless.org/dwm
+$ git clone https://git.suckless.org/st
+$ git clone https://git.suckless.org/dmenu
+```
+
+These will need to be compiled and after that we should also run them, so let's install those dependencies:
+```sh
+$ sudo dnf install @base-x @development-tools libX11-devel libXft-devel libXinerama-devel -y
+```
+These are:
+
+* `@base-x` installs [Xorg](https://en.wikipedia.org/wiki/X.Org_Server)
+* `@development-tools` installs compilers, linkers and other tools to help you build your projects
+* `libX11-devel` installs headers for X Server libraries.
+* `libXft-devel` installs headers for libraries user for working with fonts in X server.
+* `libXinerama-devel` installs headers for libraries used for multiple display support.
+
+In the `devel/src` folder we can run the following commands to install all the apps:
+```sh
+$ cd dwm && sudo make install && cd ..
+$ cd st && sudo make install && cd ..
+$ cd dmenu && sudo make install && cd ..
+```
+
+That should be enough for basic graphical environment and it already possible to run it:
+```sh
+$ echo "exec dwm" > ~/.xinitrc && startx
+```
+
+Since `startx` command evaluates what is inside `~/.xinitrc` file, having `exec dwm ` there will force the call to run dwm.
+
+## Crash course: dwm
+
+To start a program you can use dmenu. Default keybind for that is `Alt + P`.
+If you just need a terminal just press `Alt + Shift + Enter`.
+When you get two windows, you'll have to move between them. This is done with `Alt + J` and `Alt + K`.
+When you have three or more windows, you'll notice that old windows to the right side.
+That part is called the stack (it stacks windows).
+To move windows to and off the stack use `Alt + Enter`.
+When windows become too hard to manage, you can close them by pressing `Alt + Shift + C` or you can completely quit the session with `Alt + Shift + Q`.
+
+> This is only a basic introduction to tiling (on single tag!). Much more will be covered in dwm specific post.
+
+Here is a task, try to install a browser, as we mentioned it's essential, and open it with dmenu.
+
+## Next steps
+
+Current setup is as powerful as the finished one.
+In the following posts we'll spend more time on the individual tools.
+That will cover usage, configuration and adding new functionality.
+
+**Up next dwm. Stay tuned!**
+
+*Something went bad? You need assistance or just a person to chat with? You can always contact me with questions on my email.*
